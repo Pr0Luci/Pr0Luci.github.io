@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pr0luci.github.io/sitemap.xml
+Sitemap: https://pr0luci.github.io/cleanwrt-aw1000/docs/sitemap.xml

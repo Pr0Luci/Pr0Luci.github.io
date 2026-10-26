@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CleanWRT, AWvoice and Apex: OpenWrt for the Arcadyan AW1000</title>
+<meta name="description" content="Open-source OpenWrt firmware for the Arcadyan AW1000 5G router: CleanWRT, AWvoice (an RJ11 phone port with VoLTE calls), the Apex LuCI theme and a front-panel LED app. GPL-2.0, built on GitHub.">
+<link rel="canonical" href="https://pr0luci.github.io/">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0f766e">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CleanWRT">
+<meta property="og:title" content="CleanWRT, AWvoice and Apex: OpenWrt for the Arcadyan AW1000">
+<meta property="og:description" content="Open OpenWrt firmware for the AW1000 5G router with a working phone port, a modern interface and tidy LEDs.">
+<meta property="og:url" content="https://pr0luci.github.io/">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebSite","@id":"https://pr0luci.github.io/#site","url":"https://pr0luci.github.io/","name":"CleanWRT projects","inLanguage":"en"},
+{"@type":"ItemList","name":"Projects","itemListElement":[
+{"@type":"ListItem","position":1,"item":{"@type":"SoftwareApplication","name":"CleanWRT","applicationCategory":"OperatingSystem","operatingSystem":"OpenWrt 25.12 (Arcadyan AW1000)","license":"https://spdx.org/licenses/GPL-2.0-only.html","url":"https://pr0luci.github.io/cleanwrt-aw1000/docs/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}},
+{"@type":"ListItem","position":2,"item":{"@type":"SoftwareApplication","name":"AWvoice","applicationCategory":"CommunicationApplication","operatingSystem":"OpenWrt 25.12 (Arcadyan AW1000)","license":"https://spdx.org/licenses/GPL-2.0-only.html","url":"https://github.com/Pr0Luci/openwrt-aw1000-voice-awvoice","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}},
+{"@type":"ListItem","position":3,"item":{"@type":"SoftwareApplication","name":"Apex","applicationCategory":"UtilitiesApplication","operatingSystem":"OpenWrt LuCI","license":"https://spdx.org/licenses/GPL-2.0-only.html","url":"https://github.com/Pr0Luci/luci-theme-apex","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}},
+{"@type":"ListItem","position":4,"item":{"@type":"SoftwareApplication","name":"luci-app-cw-led","applicationCategory":"UtilitiesApplication","operatingSystem":"OpenWrt LuCI","license":"https://spdx.org/licenses/GPL-2.0-only.html","url":"https://github.com/Pr0Luci/luci-app-cw-led","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}}
+]}]}
+</script>
+<style>
+:root{--bg:#f6f8f8;--fg:#10201f;--mut:#4b5f5e;--card:#fff;--line:#d6e0df;--ac:#0f766e;--ac2:#14b8a6}
+@media(prefers-color-scheme:dark){:root{--bg:#0b1514;--fg:#e6f2f1;--mut:#9bb3b1;--card:#122220;--line:#1f3835;--ac:#2dd4bf;--ac2:#14b8a6}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:960px;margin:0 auto;padding:0 16px 48px}
+header{padding:56px 0 24px}
+h1{font-size:clamp(1.9rem,5vw,2.8rem);line-height:1.15;margin:0 0 12px}
+h2{margin:36px 0 12px}
+.lead{font-size:1.15rem;color:var(--mut);max-width:42rem}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+a.btn{display:inline-block;padding:10px 18px;border-radius:8px;background:var(--ac);color:#fff;text-decoration:none;font-weight:600}
+@media(prefers-color-scheme:dark){a.btn{color:#04201c}}
+a.btn.alt{background:transparent;color:var(--ac);border:1px solid var(--ac)}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
+.card h3{margin:0 0 6px}
+.card p{margin:0 0 12px;color:var(--mut)}
+.card a{color:var(--ac);font-weight:600}
+ul{padding-left:1.2rem}
+footer{color:var(--mut);font-size:.9rem;margin-top:40px;border-top:1px solid var(--line);padding-top:16px}
+a{color:var(--ac)}
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>OpenWrt for the Arcadyan AW1000</h1>
+<p class="lead">CleanWRT is an open build of OpenWrt 25.12 for the AW1000 5G router. It adds a working phone port (AWvoice), a modern interface (Apex) and LEDs that mean something. Everything is built in the open on GitHub.</p>
+<div class="btns">
+<a class="btn" href="cleanwrt-aw1000/docs/">Read the documentation</a>
+<a class="btn alt" href="cleanwrt-aw1000/docs/installation/">Install guide</a>
+<a class="btn alt" href="https://github.com/Pr0Luci/cleanwrt-aw1000/releases">Downloads</a>
+</div>
+</header>
+
+<h2>Projects</h2>
+<div class="grid">
+<section class="card"><h3>CleanWRT</h3><p>The firmware: OpenWrt 25.12 for the AW1000 with 5G, a phone port and the usual tools, all off until you ask.</p><a href="cleanwrt-aw1000/docs/">Documentation</a> · <a href="https://github.com/Pr0Luci/cleanwrt-aw1000">Source</a></section>
+<section class="card"><h3>AWvoice</h3><p>Plug an ordinary desk phone into the RJ11 socket and make and take calls over your SIM (VoLTE), with caller id, hold and a call log.</p><a href="cleanwrt-aw1000/docs/awvoice/">Guide</a> · <a href="https://github.com/Pr0Luci/openwrt-aw1000-voice-awvoice">Source</a></section>
+<section class="card"><h3>Apex</h3><p>A dark and light LuCI theme with a sidebar, a phone-friendly drawer and card-style status widgets.</p><a href="cleanwrt-aw1000/docs/theme/">Details</a> · <a href="https://github.com/Pr0Luci/luci-theme-apex">Source</a></section>
+<section class="card"><h3>LED management</h3><p>Drives the front-panel LEDs from live modem and network state, with a night mode. Works on its own on OpenWrt.</p><a href="cleanwrt-aw1000/docs/leds/">Details</a> · <a href="https://github.com/Pr0Luci/luci-app-cw-led">Source</a></section>
+</div>
+
+<h2>Start here</h2>
+<ul>
+<li><a href="cleanwrt-aw1000/docs/mtd-layout/">Check your flash layout first</a>, the image needs the expanded layout.</li>
+<li><a href="cleanwrt-aw1000/docs/installation/">Install OpenWrt on the AW1000</a> (UART and TFTP, then sysupgrade).</li>
+<li><a href="cleanwrt-aw1000/docs/recovery/">Recover an AW1000</a> if something goes wrong.</li>
+<li><a href="cleanwrt-aw1000/docs/faq/">Frequently asked questions</a>.</li>
+</ul>
+
+<footer>
+<p>Free software under GPL-2.0-only. CleanWRT is <em>Powered by OpenWrt</em> and is not affiliated with or endorsed by the OpenWrt project. OpenWrt® is a registered trademark of Software Freedom Conservancy.</p>
+</footer>
+</main>
+</body>
+</html>
